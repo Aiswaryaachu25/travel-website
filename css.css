@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  container {
+    position: relative;
+    text-align: center;
+    color: white;
+    
+  }
+  .centered {
+    position: absolute;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    color:rgb(24, 36, 3);
+    font-size:xx-large ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .logo {
+    height: 100px;
+    vertical-align:baseline;
+    width: 200px;
+  }
+  
+  .navbar {
+    
+    display: flex;
+    align-items: center;
+    padding: 1px;
+  }
+  
+  .navbar li {
+    margin-right: 10px;
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    transition: 0.3s;
+  }
+  
+ 
+  
+  header  {
+    background-color:purple;
+    color: white;
+    text-align:center;
+    padding: 10px;
+  }
+  img {
+    width: 1000px;
+    border: radius 50px;;
+    float:inline-start;
+    margin-right: 50px;
+    align-self: center;
+    
+}
+  nav a {
+   
+    display:contents;
+    gap: 500px; 
+   float: right;
+    padding: 16px 16px;
+    text-decoration:line-through;
+    color:white;
+
+  }
+  
+  nav a {
+    background-color:wheat;
+    width: 50px;
+  font-weight: bolder;
+    color:white;
+    text-decoration: dotted;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #1abc9c;
+}
+  header h1 {
+    margin: 10px 0;
+    font-size: 2.5em;
+}
+ nav a:hover{
+        background-color:floralwhite;
+        color:violet;
+ }
+ 
+ main {
+  background-color:darkkhaki;
+  text-align:center;
+}

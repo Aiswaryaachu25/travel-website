@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trip Form</title>
+  <link rel="stylesheet" href="css.css" /></head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    form {
+      background: #f2f2f2;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: teal;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    #output {
+      margin-top: 30px;
+      padding: 20px;
+      background: #e6ffe6;
+      border: 1px solid #b3ffb3;
+      border-radius: 10px;
+    }
+    footer a:hover {
+    text-decoration: underline;
+    color: #1abc9c;
+    }
+    footer p{
+    text-align: center;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 8px;
+    margin-top: 30px;
+    }
+     
+  </style>
+
+<body>
+    <header>
+   
+        <nav>
+          
+           <a href="index.html">&nbsp&nbspHome&nbsp&nbsp</a> |
+            <a href="about.html">&nbsp&nbsp&nbsp&nbspAbout&nbsp&nbsp&nbsp&nbsp </a>|
+            <a href="destination.html">&nbsp&nbsp&nbsp&nbspdestinations &nbsp&nbsp&nbsp&nbsp</a>|
+            <a href="gallery.html">&nbsp&nbsp&nbsp&nbspGallery&nbsp&nbsp&nbsp&nbsp </a>|
+            <a href="contact1.html">&nbsp&nbsp&nbsp&nbspContact&nbsp&nbsp&nbsp&nbsp </a>
+          
+        </nav>
+       
+      </header>
+      
+
+  <h2>Contact Details</h2>
+
+  <form id="contactForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="telno">Phone:</label>
+    <input type="tel" id="telno" name="phone">
+
+    <label for="country">Enter your country:</label>
+    <input type="text" id="country" name="country">
+
+    <label for="subject">Choose your fav season:</label>
+    <select id="subject" name="subject">
+      <option value="Autumn">Autumn</option>
+      <option value="Summer">Summer</option>
+      <option value="Winter">Winter</option>
+      <option value="Spring">Spring</option>
+    </select>
+
+    <label for="number">Enter total number of passengers:</label>
+    <input type="number" id="number" name="passengerno">
+
+    <label for="message">Leave a Message about your trip plans:</label>
+    <textarea id="message" name="message" rows="5"></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="output"></div>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault(); 
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const phone = document.getElementById("telno").value.trim();
+      const country = document.getElementById("country").value.trim();
+      const season = document.getElementById("subject").value;
+      const passengers = document.getElementById("number").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      
+      if (!name || !email || !phone || !country || !passengers || !message) {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        alert("Enter a valid email address.");
+        return;
+      }
+
+      
+      const phonePattern = /^\d{10}$/;
+      if (!phonePattern.test(phone)) {
+        alert("Enter a 10-digit phone number.");
+        return;
+      }
+      if (name || email || phone || country || passengers || message) {
+        alert("Form Submitted Successfully!");
+        return;
+      }
+      const output = document.getElementById("output");
+    });  
+  </script>
+  <main style="padding: 2rem;">
+    <h2>Contact Us</h2>
+    <p>Have a question or need help with your booking? Get in touch with us!</p>
+    <p>Email: support@Trektales.com</p>
+    <p>Phone: +91-8050480504</p>
+    <p>Address: 123 Wanderlust Lane, Adventure City, World</p>
+    <h2>Reach Us</h2>
+    <p>Have a question or need help with your booking? Reach us through!</p>
+    <p>instagram:_trektales_</p>
+    <p>Whatsapp: +91-8050480504</p>
+    <p>facebook:trektales</p>
+    <p>Twitter:TrekTales</p>
+  </main>
+          <br><br><br>  
+          <footer>
+              <p>&copy; 2025 Trektales.All rights reserved</p>
+            </footer>
+
+</body>
+</html>

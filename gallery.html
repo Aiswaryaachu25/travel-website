@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Project Website</title>
+  <link rel="stylesheet" href="css.css" />
+</head>
+
+</nav>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-bottom: 30px;
+      cursor: pointer;
+      background: #444;
+      color: white;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .slideshow-container {
+      max-width: 600px;
+      position: relative;
+      margin: auto;
+    }
+
+    .slides {
+      display: none;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .dot-container {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 4px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+  </style>
+</head>
+<body><body>
+
+    <header>
+     
+      <nav>
+        <ul class="navbar">
+          <li>
+            <a href="home.html">
+              <img src="c:\Users\USER\OneDrive\Documents\trektaleslogo.png" alt="TrekTales Logo" class="logo">
+            </a>
+          </li>
+        <a href="index.html">&nbsp&nbspHome&nbsp&nbsp</a> |
+        <a href="about.html">&nbsp&nbsp&nbsp&nbspAbout&nbsp&nbsp&nbsp&nbsp </a>|
+     <a href="destination.html">&nbsp&nbsp&nbsp&nbspDestinations&nbsp&nbsp&nbsp&nbsp</a>|
+     <a href="gallery.html">&nbsp&nbsp&nbsp&nbspGallery&nbsp&nbsp&nbsp&nbsp </a>|
+     <a href="contact1.html">&nbsp&nbsp&nbsp&nbspContact&nbsp&nbsp&nbsp&nbsp </a>|
+     </ul>
+     </nav>
+    </header>
+
+  <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+  <div class="slideshow-container">
+    <h2>MUNNAR</h2>
+    <img class="slides" src="https://s7ap1.scene7.com/is/image/incredibleindia/top-station-munnar-kerala-1-attr-hero?qlt=82&ts=1726672844426" />
+    <img class="slides" src="https://content.r9cdn.net/rimg/dimg/a9/dd/d6b29241-city-44818-166a7453734.jpg?width=1366&height=768&xhint=1600&yhint=1049&crop=true" />
+    <img class="slides" src="https://img.veenaworld.com/wp-content/uploads/2022/10/12-Places-to-Visit-Near-Munnar.jpg?imwidth=1300" />
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <p>☀️ Munnar During Summer – Highlights<BR>
+        🌿 Pleasant Weather – Mild and cool temperatures offer a perfect escape from the summer heat.<BR>
+        
+        🍃 Lush Greenery – Tea plantations remain vibrant and fresh, creating scenic views.<BR>
+        
+        🌸 Blooming Flowers – Summer brings a splash of color with wildflowers and fresh blooms.<BR>
+        
+        🌄 Clear Views – Skies are usually clear, making viewpoints like Top Station even more stunning.<BR>
+        
+        💦 Refreshing Waterfalls – Waterfalls like Attukal and Lakkam stay lively and picturesque.<BR>
+        
+        🚶‍♀️ Ideal for Nature Walks – Great time for light trekking and exploring green trails.<BR>
+        
+        📸 Perfect for Photography – Bright days and misty hills offer beautiful photo opportunities.
+        
+        </p>
+        
+        
+  </div>
+  <div class="slideshow-container">
+    <h2>NAINITAL</h2>
+    <img class="slides" src="https://assets.simplotel.com/simplotel/image/upload/x_0,y_0,w_1920,h_1080,c_crop,q_80,fl_progressive/w_900,h_506,f_auto,c_fit/the-clarks-hotels-resorts/Nanital_mepkcl" />
+    <img class="slides" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Nainital_metro.jpg/1200px-Nainital_metro.jpg" />
+    <img class="slides" src="https://www.epicyatra.com/wp-content/uploads/2023/10/WhatsApp-Image-2023-10-10-at-11.04.54.jpeg" />
+    <P>🌞🌤️Pleasant Weather : Summer temperatures are mild (10°C to 30°C), perfect for escaping the heat of the plains.<br>
+
+        🧳🏞️ Tourist Influx: A popular destination for tourists from all over, drawn by the cool climate and stunning scenery.<br>
+        
+        🚣‍♂️🌊Lake Activities : Enjoy boating, yachting, and paddle boating on the famous Naini Lake.<br>
+        
+        🌲🚶‍♀️ Nature Walks : Explore trekking and nature walks to spots like Tiffin Top, Snow View Point, and Land's End.<br>
+        
+        🌸🐦 Flora and Fauna : Lush forests and diverse wildlife make Nainital a paradise for nature lovers.<br>
+        
+        🛍️🎨Shopping and Local Culture: Shop for local handicrafts, woollens, and souvenirs at Mall Road, while soaking in the Kumaoni culture.<br>
+        
+        🎉🎭 Events and Festivals: The Nainital Summer Festival brings music, dance, and cultural performances to the town.<br>
+        
+        🌙🧣 Cool Nights : While the days are warm, the nights are chilly, perfect for cozying up with light woolens.<br>
+        
+        🚗🛣️Accessibility : Easily accessible by road from major cities like Delhi, making it a perfect weekend getaway.<br>
+        
+        🧘‍♀️🌿 Overall Atmosphere: A serene place to relax, enjoy nature, and take a break from city life.<br>
+        </P>
+  </div>
+  <div class="slideshow-container">
+    <h2>KASOL</h2>
+    <img class="slides" src="https://www.thehosteller.com/_next/image/?url=https%3A%2F%2Fstatic.thehosteller.com%2Fhostel%2Fimages%2FFeatured.jpg%2FFeatured-1680688882981.jpg&w=2048&q=75" />
+    <img class="slides" src="https://lazymonkadventure.com/wp-content/uploads/2021/10/Kasol-Kheerganga-Trek-3-1200x900.jpg" />
+    <img class="slides" src="https://www.nativeplanet.com/img/2017/11/1kasol-15-1510723722.jpg?14042025024956" />
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+  <P>🌞Pleasant Weather : The temperature in Kasol during the summer ranges from 15°C to 30°C, making it a perfect getaway for those looking to escape the heat.<br>
+
+    🌳 Lush Greenery : Kasol is known for its vibrant green landscapes, surrounded by pine trees and the Parvati Valley, which becomes even more stunning in the summer.<br>
+    
+    🥾Ideal for Trekking: Summer is the best time for trekking to places like Kheerganga, Tosh, and Malana, offering breathtaking views.<br>
+    
+    🌊Riverside Vibes: The Parvati River runs through the town, providing a serene setting for relaxation and activities like river rafting and camping.<br>
+    
+    🍵 Café Culture : Kasol is filled with cozy cafés offering delicious local and Israeli food. It’s a great spot for food lovers and for chilling with friends.<br>
+    
+    🧗Adventure Activities: Activities like paragliding, rock climbing, and fishing are popular during the summer season.<br>
+    
+    🌙Nightlife : Kasol has a laid-back but lively nightlife with many cafes and camps hosting musical performances and bonfires.<br>
+    
+    🛍️Local Markets : Summer is the time when the local markets are bustling with unique handmade goods, clothing, jewelry, and souvenirs to take back home.<br>
+    
+    ☮️Peaceful Atmosphere : Despite the influx of tourists, Kasol maintains a calm and peaceful vibe, making it ideal for unwinding and connecting with nature.<br>
+    
+    🧘‍♂️Yoga & Meditation: Many wellness retreats in Kasol offer yoga and meditation sessions, making it a great place to find inner peace during the summer.</P>
+   </div>
+   <div class="slideshow-container">
+    <h2>MANALI</h2>
+    <img class="slides" src="https://static.toiimg.com/photo/115938932.cms" />
+    <img class="slides" src="https://www.indiadrivertours.com/wp-content/uploads/2017/06/tpkg-manalitour.jpg" />
+    <img class="slides" src="https://manalitourism.co.in/images/places-to-visit/headers/one-day-manali-top-places-to-visit-header-manali-tourism.jpg.jpg" />
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+   <P> 🏔️❄️Snow-Capped Mountains: The entire landscape is covered with a beautiful blanket of snow, creating a winter wonderland.<br>
+
+    🧣🧤Chilly Weather : Temperatures drop to sub-zero levels, making it perfect for cozy clothes and hot drinks.<br>
+    
+    🪂⛷️Adventure Activities: Skiing, snowboarding, and snow treks attract adventure lovers to the area.<br>
+    
+    🌊❄️rozen Rivers and Lakes : The Beas River and nearby lakes freeze over, adding to the serene beauty of the place.<br>
+    
+    ⛄Snowman Making: Kids and families often indulge in snowman-making and other playful activities.<br>
+    
+    🎄🎅Holiday Vibes: The festive spirit is high, with Christmas and New Year celebrations drawing tourists.<br>
+    
+    🌲🏡Peaceful Retreat : The quiet, snow-covered landscape offers a peaceful escape from city life.<br>
+    
+    ☕🍰Cozy Cafes: Enjoy hot beverages and local delicacies in the warmth of quaint mountain cafes.<br>
+    
+    📸🏞️ Scenic Views: Stunning views of the snow-covered mountains and forests are perfect for photography.</P>
+  </div>
+  <div class="slideshow-container">
+    <h2>HAMPI</h2>
+    <img class="slides" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Hampi_virupaksha_temple.jpg/1200px-Hampi_virupaksha_temple.jpg" />
+    <img class="slides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQx_fmyFIhzkIo-fGsLeVgkSSdBQhaHcRp55FF7T3YIc7ZfZjK10vvfZf1FaszDuR6pm4&usqp=CAU" />
+    <img class="slides" src="https://images.travelandleisureasia.com/wp-content/uploads/sites/3/2025/02/21211137/hampi-places-to-visit-fi.jpeg?tr=w-480,f-jpg,pr-true" />
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+  <p>🌞❄️Pleasant Weather : Winter in Hampi (November to February) brings cool, comfortable weather, ideal for exploring its heritage sites and natural beauty.<br>
+
+    🌅🌙Cool Mornings and Evenings: Early mornings and evenings are chilly, offering a refreshing break from the heat of summer.<br>
+    
+    🏛️🚶‍♂️Perfect for Sightseeing: The pleasant weather makes it perfect for visiting the UNESCO World Heritage sites like Virupaksha Temple, Vithala Temple, and Hampi Bazaar.<br>
+    
+    🌅🌇 Stunning Sunsets: Hampi offers breathtaking sunsets over the boulder-strewn landscape, making it a photographer's paradise.<br>
+    
+    🎉🎶Festivals and Events : The winter months host cultural festivals like Hampi Utsav, which celebrates classical music, dance, and local traditions.<br>
+    
+    🧘‍♀️🌄 Peaceful Atmosphere : With fewer tourists compared to the peak summer months, Hampi offers a more peaceful, serene experience for visitors.<br>
+    
+    🥾🧗‍♂️ Ideal for Trekking : The cooler weather is great for exploring the hills, ruins, and boulders of Hampi on foot.<br>
+    
+    🍲🍛Local Cuisine: Enjoy warm, delicious local dishes like Ragi Mudde and Bisi Bele Bath, perfect for the chilly evenings.<br>
+    
+    ✨🌠Clear Skies : The clear skies offer an amazing view of the stars at night, perfect for stargazing.<br>
+    
+    🏺🎨 Cultural Vibes : Hampi’s rich history and vibrant culture are best experienced in the calm of the winter months.</p></div>
+    <div class="slideshow-container">
+        <h2>SHIMLA</h2>
+        <img class="slides" src="https://kosha.co/cdn/shop/articles/What-to-wear-in-Shimla-in-Winter.jpg?v=1721022297" />
+        <img class="slides" src="https://i0.wp.com/thelandofwanderlust.com/wp-content/uploads/2024/12/IMG_2024-12-16-111137.jpeg" />
+        <img class="slides" src="https://www.jakhuropewayshimla.com/wp-content/uploads/2024/11/Best-Places-to-Visit-in-Shimla-in-December.jpg" />
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+    <p>❄️🏔️Snow-Capped Peaks  - Shimla transforms into a winter wonderland with snow covering its hills and surrounding mountains.<br>
+
+        🌬️ Cold and Crisp Air  - The temperatures drop significantly, often reaching below freezing at night, offering a refreshing chill in the air.<br>
+        
+        🎿⛷️ Winter Sports  - Popular activities like skiing, ice skating, and snowboarding attract adventure enthusiasts to nearby areas like Kufri.<br>
+        
+        🧊Frozen Lakes  - Some of the lakes and rivers freeze, creating picturesque scenes and opportunities for ice skating.<br>
+        
+        🎄🎉Christmas & New Year Celebrations - Shimla lights up with festive decorations and events, making it a popular holiday destination.<br>
+        
+        🌨️Snowfall in the Mall Road - The Mall Road, Shimla’s main street, becomes magical with the first snowfall, making it perfect for a stroll.<br>
+        
+        🕊️Peaceful Vibe - Despite being a popular tourist spot, Shimla’s winter season offers a serene, calm atmosphere for those seeking a quiet getaway.<br>
+        
+        ☕🍲Warm Cafes & Local Cuisine - Cozy up in charming cafes and enjoy warm dishes like hot momos, soups, and local Himachali food.</p></div>
+        <div class="slideshow-container">
+            <h2>COORG</h2>
+            <img class="slides" src="https://farm9.staticflickr.com/8115/8684722345_da412c2178_z.jpg"
+            <img class="slides" src="https://d3kgrlupo77sg7.cloudfront.net/media/coorgvisit.com/images/tinymce/Image.20230208024619.webp" />
+            <img class="slides" src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/11/cover-for-Places-To-Visit-Near-Coorg_4th-november.jpg" />
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+        <p>🍂 Pleasant Weather – Autumn (Oct-Nov) brings mild temperatures, making it ideal for travel and sightseeing.<br>
+
+            🌤️ Clear Skies – The skies are mostly clear, offering beautiful views of the Western Ghats.<br>
+            
+            🌳 Lush Greenery – Monsoon just ends, so the landscape remains vibrant and fresh.<br>
+            
+            ☕ Coffee Season – It's coffee harvesting time! Coorg’s coffee plantations are bustling and aromatic.<br>
+            
+            🐒 Wildlife Sightings – Ideal season to visit Nagarhole or Dubare, with better chances of spotting animals.<br>
+            
+            🚶 Perfect for Treks – Trails like Tadiandamol and Brahmagiri are easier and scenic in autumn.<br>
+            
+            🛕 Cultural Vibes – Local festivals and traditions can be experienced during this period.<br>
+            
+            📸 Great for Photography – Vivid colors, misty mornings, and golden hour views are a treat for photographers.
+            
+            </p></div>
+            <div class="slideshow-container">
+                <h2>KUPWARA</h2>
+                <img class="slides" src="https://blog.explurger.com/wp-content/uploads/2024/09/Experience-Autumn-in-Kashmir-1200x900-2.jpg" />
+                <img class="slides" src="https://www.xploreunxplored.com/wp-content/uploads/2014/05/DSC_0738_thumb.jpg" />
+                <img class="slides" src="https://t4.ftcdn.net/jpg/09/89/20/09/360_F_989200981_lyPjYeqXUWZlbkd83XyuglCOxG8iWVxm.jpg" />
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                  </div>
+            <p>🍁 Vibrant Foliage – Kupwara transforms into a colorful canvas with shades of red, yellow, and orange leaves.<br>
+
+                🏞️ Scenic Beauty – Valleys and hills are covered with golden chinar trees, making every view picture-perfect.<br>
+                
+                🌥️ Pleasant Weather – Crisp air and cool breezes make it ideal for sightseeing and nature walks.<br>
+                
+                🍎 Fruit Harvest – It's harvest season for apples and walnuts, with orchards full of fresh produce.<br>
+                
+                🐦 Migratory Birds – Autumn brings flocks of migratory birds to Wular Lake and nearby wetlands.<br>
+                
+                🧥 Light Winter Gear – Locals start wearing light woolens as temperatures begin to drop.<br>
+                
+                📸 Photography Paradise – The autumn charm makes it a favorite for photographers and nature lovers.<br>
+                
+                🕌 Cultural Warmth – Local festivals and traditions add a lively and warm vibe to the cool atmosphere.</p></div>
+                <div class="slideshow-container">
+                    <h2>UDAIPUR</h2>
+                    <img class="slides" src="https://c.ndtvimg.com/2025-03/i9bpq1a_doodh-talai_625x300_04_March_25.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=738" />
+                    <img class="slides" src="https://deih43ym53wif.cloudfront.net/udaipur-india-shutterstock_753879010_c9584ba0db.jpeg" />
+                    <img class="slides" src="https://d3sftlgbtusmnv.cloudfront.net/blog/wp-content/uploads/2024/09/Things-To-Do-In-Udaipur-At-Night-OG-Photo-840x425.jpg" />
+                    <div class="dot-container">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                      </div>
+                      <p>🍁 Udaipur in Autumn – A Quick Glimpse:
+
+                        🌤 Pleasant Weather:
+                        Autumn (October to November) brings mild and comfortable temperatures, perfect for sightseeing.<br>
+                        
+                        🌇 Golden Sunsets:
+                        The city glows with golden hues during sunset, especially over Lake Pichola and Fateh Sagar Lake.<br>
+                        
+                        🌊 Sparkling Lakes:
+                        Post-monsoon season fills up the lakes, making them look fresh, full, and incredibly scenic.<br>
+                        
+                        🏰 Stunning Architecture:
+                        The palaces and forts, like City Palace and Sajjangarh, look even more majestic in the soft autumn light.<br>
+                        
+                        🎨 Cultural Vibes:
+                        Local festivals and folk performances add vibrant color and traditional charm to the city.<br>
+                        
+                        🚣‍♂️ Ideal for Boating:
+                        Calm winds and clear skies make autumn a great time for boat rides on the lakes.<br>
+                        
+                        🌿 Lush Surroundings:
+                        The greenery from the monsoon lingers, giving the Aravalli hills a beautiful backdrop.<br>
+                        
+                        📸 Perfect for Photography:
+                        The soft light and clear skies offer amazing photo opportunities all around the city.</p></div>
+                <div class="slideshow-container">
+                        <h2>GULMARG</h2>
+                        <img class="slides" src="https://images.travelandleisureasia.com/wp-content/uploads/sites/7/2024/02/07182556/hifi-imad-clicks-pexels-1600x900.jpeg" />
+                        <img class="slides" src="https://www.ekashmirtourism.com/wp-content/uploads/2022/12/hot-air-balloon-kashmir.jpg" />
+                        <img class="slides" src="https://www.kashmir-tourism.com/gulmarg3.jpg" />
+                        <div class="dot-container">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                          </div>
+                          <p>🌸 Blooming Beauty – Gulmarg is covered with vibrant flowers like daisies and buttercups, making it look like a colorful paradise.<br>
+
+                            🏔️ Snow-Capped Peaks – While the lower areas bloom, the mountains still wear a crown of snow, creating a stunning contrast.<br>
+                            
+                            🌿 Lush Green Meadows – The meadows turn lush and green, perfect for nature walks and picnics.<br>
+                            
+                            🚡 Gondola Rides – Enjoy panoramic views with one of the highest cable cars in the world.<br>
+                            
+                            🌞 Pleasant Weather – Cool, refreshing air with mild sunshine makes it ideal for sightseeing and outdoor activities.<br>
+                            
+                            🐎 Horse Riding – Popular activity across the meadows and trails surrounded by natural beauty.<br>
+                            
+                            🧳 Perfect for Tourism – Spring attracts many tourists looking to enjoy nature, click pictures, and relax
+                            
+                            </p></div>
+                 <div class="slideshow-container">
+                            <h2>DARJEELING</h2>
+                            <img class="slides" src="https://ihplb.b-cdn.net/wp-content/uploads/2021/04/Darjeeling.jpg" />
+                            <img class="slides" src="https://www.mapsofindia.com/ci-moi-images/my-india/darjeeling.jpg" />
+                            <img class="slides" src="https://himalayanoutback.com/wp-content/uploads/2022/03/Sikkim-Darjeeling-Treks-in-Summer-or-Spring.jpeg" />
+                            <div class="dot-container">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                              </div>
+                              <p>🌸 Blooming Beauty – Spring (March to May) brings vibrant rhododendrons, magnolias, and orchids in full bloom.<br>
+
+                                🌤️ Pleasant Weather – Mild temperatures ranging from 10°C to 20°C make it perfect for sightseeing and outdoor activities.<br>
+                                
+                                🏞️ Clear Views of Kanchenjunga – Spring skies are generally clear, offering stunning views of the snow-capped Kanchenjunga range.<br>
+                                
+                                🚂 Toy Train Rides – A scenic ride on the Darjeeling Himalayan Railway is extra special amidst the spring landscape.<br>
+                                
+                                🍃 Tea Gardens Turn Lush – Tea estates like Happy Valley look fresh and green, with the first flush of tea leaves being harvested.<br>
+                                
+                                🧥 Light Woolens Needed – Days are warm but evenings can get chilly, so carrying a light sweater is advisable.<br>
+                                
+                                📸 Perfect for Photography – Colorful flowers, green valleys, and clear mountains make spring a paradise for photographers.<br>
+                                
+                                🎉 Local Festivals – You might catch local events or fairs celebrating spring and the harvest season.</p></div>
+                        <div class="slideshow-container">
+                          <h2>THE VALLEY OF FLOWERS</h2>
+                          <img class="slides" src="https://media.assettype.com/outlooktraveller%2F2024-04%2Ff3a6cee4-ee67-4d6b-b20e-0a4104b82dda%2Fvalley_of_flowers_2.jpg?w=480&auto=format%2Ccompress&fit=max" />
+                          <img class="slides" src="https://trekthehimalayas.com/images/ValleyofFlowersTrek/Slider/b3d630fb-3f9a-4cc6-9fef-1be72e135695_VOF.jpg" />
+                          <img class="slides" src="https://www.india.com/wp-content/uploads/2021/07/Valley-of-flowers-1200.jpg" />
+                          <div class="dot-container">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                           </div>
+                           <p>🌸 Blooming Paradise – The valley bursts into vibrant colors with thousands of flowers in full bloom.<br>
+
+                            🏞️ Lush Greenery – Fresh green grass and foliage cover the valley, making it look like a natural carpet.<br>
+                            
+                            🐝 Buzzing Biodiversity – Bees, butterflies, and birds are active, attracted by the sweet scent of flowers.<br>
+                            
+                            🌄 Scenic Beauty – Snow-capped peaks, blue skies, and colorful meadows create a picture-perfect view.<br>
+                            
+                            🚶‍♂️ Ideal for Trekkers – Pleasant weather and blooming landscapes make it a great time for trekking.<br>
+                            
+                            🌦️ Mild Climate – Spring offers cool, comfortable temperatures – perfect for exploration.<br>
+                            
+                            📸 Photographer’s Delight – The stunning natural colors make it a dream location for nature photography.<br>
+                            
+                            🌿 Rare Flora – Home to many endemic and medicinal plant species not found elsewhere.<br>
+                            
+                            ⛺ Eco-tourism Spot – A protected national park, it promotes responsible and eco-friendly tourism.<br>
+                            
+                            🙌 Spiritual Aura – Believed to be the place where gods live, adding a mystical charm to its beauty.</p></div>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      const slides = document.getElementsByClassName("slides");
+      const dots = document.getElementsByClassName("dot");
+
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }    
+
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      slides[slideIndex - 1].style.display = "block";  
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 3000); 
+    }
+
+    function currentSlide(n) {
+      slideIndex = n - 1;
+      showSlides();
+    }
+  </script>
+
+  </header>
+  <br><br><br>  
+          <footer>
+              <p>&copy; 2025 Trektales.All rights reserved</p>
+            </footer>
+</body>
+</html>
